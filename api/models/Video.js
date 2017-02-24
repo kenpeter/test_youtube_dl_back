@@ -12,7 +12,7 @@ module.exports = {
     youtube_id: {type: 'string'},
     duration: {type: 'string'},
     fulltitle: {type: 'string'},
-    view_count: {type: 'number'},
+    view_count: {type: 'string'}, // so it is string in youtube.
     
     description: {type: 'string'},
     thumbnail: {type: 'string'},
