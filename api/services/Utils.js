@@ -18,3 +18,8 @@ module.exports.youtubedl_get_info = function (input) {
   });
   
 };
+
+
+module.exports.puts = function (error, stdout, stderr) { 
+  console.log(stdout);
+}
