@@ -54,7 +54,11 @@ module.exports = {
             // format
             ['--format=18'],
             // start that download
-            { start: downloaded, cwd: __dirname + "/../../video" }
+            { 
+              start: downloaded, 
+              cwd: __dirname + "/../../video",
+              maxBuffer: Infinity
+            }
           );
 	        
 	        // video info
@@ -273,7 +277,7 @@ module.exports = {
       8000
     );
     
-  }
+  },
   
   
   push_video: function (req, res) {
@@ -315,9 +319,9 @@ module.exports = {
       }, 
       8000
     );
-    
-    
   }
+  
+  
   
 };
 
